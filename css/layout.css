@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.offset:before {
+    height: 3.9rem;
+    margin-top: -3.9rem;
+    content: "";
+    display: block;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0, 0, 0, 6) !important;
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 300px;
+}
+
+.carousel-item {
+    height: 50vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+
+carousel-caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+carousel-caption h3 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.file-item {
+    background-color: rgb(163, 166, 169);
+    /*height: 40px;*/
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.file-item:hover {
+    cursor: pointer;
+}
+
+.file-item span {
+    margin-left: 10px;
+}
+
+.file-item-logo {
+    height: 20px;
+    /* Temporary solution to make the image white, center and invert the image later*/
+    filter: invert(100%);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(233, 236, 239);
+    width: 100vw;
+    height: 105px;
+    text-align: center;
+}
+
+bg-grey {
+    background-color: rgb(233, 236, 239) !important;
+}

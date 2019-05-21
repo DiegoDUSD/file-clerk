@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>File Clerk</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/index-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <script src="js/popup-script.js" defer></script>
+    <!--
+            Bootstrap imports and hash verifications
+            This also includes jQuery and popper.js
+        -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+<div id="page-body">
+<!-- Start of the Home section-->
+<div id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="nav-item nav-link" href="#home">Home</a>
+        <a class="nav-item nav-link" href="#tools">Tools</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
+    </nav>
+    
+    <!-- Image Slider -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox" style="height: 50vh;">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/computer.jpg">
+                <div class="carousel-caption text-center" style="left: 0;">
+                    <h1>File Clerk</h1>
+                    <h3>A tool to organize Google Drive for you.</h3>
+                    <a class="btn btn-outline-light btn-lg" href="#tools">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- End of Home section -->
+    
+<!-- Start of Tools section -->    
+<div id="tools">
+    <section>
+        <div class="jumbotron text-center">
+            <h1><strong>Tools</strong></h1>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row" style="width: 100%;">
+
+                <div class="col-3" style="background-color: rgb(233, 236, 239);">
+                    <!-- This section of the page is for the tools section where the user can organize and manage files -->
+                    <br>
+                    <h3 class="text-center">Tools</h3>
+                    <div class="dropdown" style="padding-bottom: 20px;padding-top: 20px;">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
+                        Organize...
+                        </button>
+                        <!-- Code for the dropdown menu for the Organize tool -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">By filename prefix</a>
+                            <a class="dropdown-item" href="#">By filename suffix</a>
+                            <a class="dropdown-item" href="#">By filename content</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" style="padding-bottom: 20px;">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
+                        Add File...
+                        </button>
+                        <!-- Code for the dropdown menu for the Add tool -->
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Folder</a>
+                            <a class="dropdown-item" href="#">Document</a>
+                            <a class="dropdown-item" href="#">Slideshow</a>
+                            <a class="dropdown-item" href="#">Sheets</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-info" type="button" style="width: 100%; margin-bottom: 20px;" id="rename-file-button">
+                        Rename file...
+                    </button>
+                </div>
+                <div class="col-6">
+                    <!-- List of files -->
+                    <div class="file-item">
+                        <img class="file-item-logo" src="images/folder-logo-2.png" draggable="false" />
+                        <span>Example Drive Item</span>
+                    </div>
+                    <div class="file-item">
+                        <img class="file-item-logo" src="images/folder-logo-2.png" draggable="false" />
+                        <span>Example Drive Item</span>
+                    </div>
+                    <div class="file-item">
+                        <img class="file-item-logo" src="images/folder-logo-2.png" draggable="false" />
+                        <span>Example Drive Item</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-spacer"></div>
+        </div> 
+    </section>
+    <!-- Rename Popup-->
+</div>  
+<!--- End of Tools section -->    
+    
+<hr>
+    
+<!-- Start of contact section -->    
+<div id="contact">
+    
+    <footer class="container justify-content-center">
+    <!--<div class="justify-content-center">-->
+        
+        <!--<div class="text-center" style="width: 100%;">-->
+            <p class="text-center">
+                <b class="large-p-text">Contact Info</b><br>
+                (888)-888-888 - andrews8753@mydusd.org<br><br>
+                <i>Thomas Andrews, developer for the Entrepreneurship Project</i>
+            </p>
+            
+        <!--</div>-->
+    <!--</div>    -->
+    </footer>
+</div>  
+<!-- End of contact section -->  
+
+<!-- End of #page-body -->
+</div>
+<div id="rename-popup">
+        <form>
+            <h4>Rename File...</h4>
+            <input type="text" style="width: 80%;">
+            <br>
+            <button class="btn btn-info" style="margin-top: 4px;">Rename</button>
+            <button class="btn btn-danger" style="margin-top: 4px;" id="cancel-rename-button">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
